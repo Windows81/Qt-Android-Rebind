@@ -18,3 +18,5 @@ Outputs:
 The generator is deterministic: the same symbols always produce the same
 method names, so newer Studio versions can be processed without editing code.
 `selftest.py` checks the generated files against a small fixture inventory.
+
+Licence: GNU General Public License v3 (see `LICENSE`).
