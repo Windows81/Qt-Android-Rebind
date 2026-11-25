@@ -17,6 +17,11 @@ Outputs:
 
 The generator is deterministic: the same symbols always produce the same
 method names, so newer Studio versions can be processed without editing code.
+`extract_qt_runtime.py --apk APP.apk --out-dir DIR` is a companion helper:
+it pulls `lib/arm64-v8a/libQt5*.so` from a Qt 5 Android release APK, records
+the Qt version found in `libQt5Core`, and creates the short aliases such as
+`QtCore.so` expected by the converted libraries.
+
 `selftest.py` checks the generated files against a small fixture inventory.
 
 Licence: GNU General Public License v3 (see `LICENSE`).
